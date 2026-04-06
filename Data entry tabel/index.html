@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Table
+        </h1>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <th>
+                        <input id="name" type="text" placeholder="Name" required autocomplete="off">
+                    </th>
+                    <th>
+                        <input id="Address" type="text" placeholder="Address" required autocomplete="off">
+                    </th>
+                    <th>
+                        <input id="CNIC" type="number" placeholder="CNIC" required autocomplete="off">
+                    </th>
+                    <th>
+                        <input id="Cell" type="tel" placeholder="Cell phone" required autocomplete="off">
+                    </th>
+                    <th>
+                        <button class="btn-default" onclick="update()">Update</button>
+                        <button onclick="add()" class="btn-success">+</button>  
+                    </th>
+                </thead>
+            </table>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th scope="col">
+                        Sr.
+                    </th>
+                    <th scope="col">
+                        Name
+                    </th>
+                    <th scope="col">
+                        Address
+                    </th>
+                    <th scope="col">
+                        CNIC
+                    </th>
+                    <th scope="col">
+                        Cell phone
+                    </th>
+                    <th scope="col">
+                        Action
+                    </th>
+                </thead>
+                <tbody id="body">
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

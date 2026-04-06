@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+    <script src="script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Calculator
+        </h1>
+        <input type="number" id="num1" placeholder="Enter first number" required>
+        <br>
+        <input type="number" id="num2" placeholder="Enter second number" required>
+        <br>
+        <select id="op">
+            <option value="">select option</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <br>
+        <button type="button" class="btn btn-success" onclick="calculate()">Calculate</button>
+        <p>
+            The result is: <span id="result"></span>
+        </p>
+    </div>
+</body>
+</html>

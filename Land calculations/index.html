@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>Land calculator</title>
+</head>
+<body>
+    <hr>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>Marla</th>
+                    <th>Square Feet</th>
+                    <th>Kanal</th>
+                    <th>Acre</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input id="marla" class="form-control  marla cls" type="number" value="0" placeholder="Enter" autocomplete="off" onkeyup="marla(this)">
+                        </td>
+                        <td>
+                            <input id="sq" class="form-control  sq cls" type="number" value="0" placeholder="Enter" autocomplete="off" onkeyup="squareFeet(this)">
+                        </td>
+                        <td>
+                            <input id="kanal" class="form-control  kanal cls" type="number" value="0" placeholder="Enter" autocomplete="off" onkeyup="kanal(this)">
+                        </td>
+                        <td>
+                            <input id="acre" class="form-control  acre cls" type="number" value="0" placeholder="Enter" autocomplete="off" onkeyup="acre(this)">
+                        </td>
+                        <td>
+                            <button class="btn btn-success" onclick="add()">+</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <tbody id="body">
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

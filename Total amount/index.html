@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Generate Installments</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="col-md-6">
+                <h4 class="total">Total amount</h4>
+                <input class="form-control" id="am" class="amount" type="number" placeholder="Enter total amount" required autocapitalize="of">
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="col-md-3">
+                <h4>Advance</h4>
+                <input id="ad" class="form-control" class="adv" type="number" value="0" placeholder="Advance amount" autocomplete="off" onkeyup="fillR()">
+            </div>
+            <div class="col-md-3">
+                <h4>Remaining amount</h4>
+                <input id="r" type="number" class="form-control" value="0" placeholder="Remaining amount">
+            </div>
+            <div class="col-md-3">
+                <h4>Amount per Installments</h4>
+                <input class="form-control" id="amins" class="installments" type="number" value="0" placeholder="Enter amount per installments" required autocapitalize="of" onkeyup="filln()">
+            </div>
+            <div class="col-md-3">
+                <h4>Number of installments</h4>
+                <input class="form-control" id="noins" class="noi" type="number" value="0" placeholder="Number of installments" onkeyup="filla()">
+            </div>
+        </div>
+        <div class="container amo">
+            <div class="col-md-6">
+                <h4>Date</h4>
+                <input id="d" class="form-control" class="date" type="date" placeholder="Date" required autocomplete="off">
+            </div>
+            <div class="col-md-6">
+                <h4>Type</h4>
+                <select id="st" class="form-select form-control">
+                    <option class="selected">Select type</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Half-yearly">Half-yearly</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <button class="btn btn-success btn-lg" onclick="generateInstallments()">Generate</button>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <th scope="col">
+                            Advance
+                        </th scope = "col">
+                        <th scope="col">
+                            Installments
+                        </th>
+                        <th scope="col">
+                            Date
+                        </th>
+                        <th scope = "col">
+                            Amount per installment
+                        </th>
+                        <th scope="col">
+                            type
+                        </th>
+                        <th scope="col">
+                            Action
+                        </th>
+                    </thead>
+                    <tbody id="body">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" id="t"></th>
+                            <td id="ti"></td>
+                            <td id="lastDate"></td>
+                            <td id="ta"></td>
+                            <td id="tp"></td>
+                            <td id="tdbtn"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <hr>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.total{
+    margin-top: 50px;
+}
+.installments{
+    width: 100%;
+}
+.amount{
+    width: 100%;
+}
+.noi{
+    width: 100%;
+}
+.gbtn{
+    margin-top: 40px;
+}
+.in{
+    text-align: center;
+}
+.date{
+    width: 100%;
+}
+.type{
+    width: 100%;
+}
+.adv{
+    width: 100%;
+}
+.amo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.selected{
+    display: none;
+}
